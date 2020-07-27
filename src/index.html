@@ -16,16 +16,11 @@
   <body>
     <header class="header">
       <div class="content-container header__content-container">
-        <nav class="nav header__nav">
-          <a href="#" class="nav__link">
-            <img
-              class="nav__logo"
-              src="./images/NAMU-logo.svg"
-              alt="NAMU-logo"
-            >
-          </a>
 
-          <div class="nav__rightside">
+        <nav class="nav header__nav">
+          <a href="#" class="nav__logo"></a>
+
+          <div class="nav__container">
             <div class="mobile-menu nav__mobile-menu">
               <input
                 id="menu"
@@ -33,38 +28,84 @@
                 type="checkbox"
               >
               <label for="menu" class="mobile-menu__label"></label>
+
+              <div class="hidden-menu mobile-menu__hidden-menu">
+
+                <!-- <div class="hidden-menu__info">
+                  <p class="hidden-menu__working-hours">Розклад сьогодні:
+                    <span class="hidden-menu__details">12:00 - 19:00</span>
+                  </p>
+                  <p class="hidden-menu__address">Адреса:
+                    <span class="hidden-menu__details">Київ, вул. М. Грушевського, 6</span>
+                  </p>
+                </div>
+
+                <div class="hidden-menu__navbar">
+                  <div class="hidden-menu__nav">
+                    <ul class="hidden-menu__nav-list">
+                      <li class="hidden-menu__nav-item">
+                        <a href="#" class="hidden-menu__nav-link">Спланувати візит</a>
+                      </li>
+                      <li class="hidden-menu__nav-item">
+                        <a href="#" class="hidden-menu__nav-link">Виставки та події</a>
+                      </li>
+                      <li class="hidden-menu__nav-item">
+                        <a href="#" class="hidden-menu__nav-link">Колекція</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="hidden-menu__actions">
+                  <button class="button hidden-menu__button-buy">Купити квиток</button>
+                  <button class="button hidden-menu__button-member">Купити квиток</button>
+                </div>
+
+                <div class="hidden-menu__img-container">
+                  <img src="./images/boy-with-paints.svg" alt="Boy with paints" class="hidden-menu__image">
+                </div> -->
+
+              </div>
             </div>
 
-            <div class="nav__language">
-              <span>UA</span>
-              <img src="./images/arrow_bottom_language.png" alt="">
+            <div class="language nav__language">
+              <select class="language__choose" name="language">
+                <option class="languge__value" value="#UA">UA</option>
+                <option class="languge__value" value="#EN">EN</option>
+                <option class="languge__value" value="#RU">RU</option>
+              </select>
             </div>
           </div>
         </nav>
 
-        <div class="header__bottonside">
+        <div class="header__bottomside">
+
           <div class="header__title">
-            <p class="header__paragraf">10 серпня - 10 листопада</p>
-            <h1 class="header__title-top">Мистецтво</h1>
-            <h1 class="header__title-bottom">ХІХ - ХХ ст.</h1>
-            <p class="header__paragraf header__paragraf-bottom">
+            <p class="header__dates">10 серпня - 10 листопада</p>
+            <h1 class="header__title">Мистецтво <br>
+              <span class="header__title-wrap">ХІХ - ХХ ст.</span>
+            </h1>
+            <p class="header__description">
               Внесок українських митців у світову культуру 19-20ст
             </p>
-            <button class="header__button">
-              <a class="header__link" href="#">Купити квиток</a>
-            </button>
-            <p class="header__paragraf-line">10.08 - 10.10</p>
-
+            <button class="button header__button">Купити квиток</button>
           </div>
 
-          <div class="header__image">
-            <img src="./images/header_girl.png" alt="Фото з картини Дівчина з Поділля В. Тропінін">
-            <p class="header__image-description">Дівчина з Поділля
-              <br>В. Тропінін
-            </p>
+          <p class="header__bottom-info">10.08 - 10.10</p>
+
+          <div class="header__image-box" title="Дівчина з Поділля">
+            <img
+              src="./images/header_girl.png"
+              alt="Дівчина з Поділля В. Тропінін"
+              class="header__image"
+            >
+            <!-- <p class="header__image-description">
+                Дівчина з Поділля В. Тропінін
+              </p> -->
           </div>
 
         </div>
+
       </div>
     </header>
 

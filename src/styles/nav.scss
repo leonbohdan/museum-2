@@ -1,24 +1,32 @@
 .nav {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
-  &__rightside {
-    display: inline-flex;
-  }
+  padding: 0 55px;
+  // padding: 20px 55px 0;
 
   &__logo {
-    width: 120px;
-    height: 40px;
+    width: 110px;
+    height: 25px;
+    background-image: url(../images/NAMU-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
   }
 
-  &__link {
-    height: 40px;
-    // font-family: 'Roboto', ;
-    // text-decoration: none;
-    // color: $c-white-text;
-    // text-transform: uppercase;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+
+  &__mobile-menu {
+    // 
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
   }
 }

@@ -6,6 +6,12 @@
 @import "header";
 @import "nav";
 @import "content-container";
+@import "language";
+@import "button";
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-family: "Playfair Display", serif;
