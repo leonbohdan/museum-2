@@ -1,0 +1,24 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  &__rightside {
+    display: inline-flex;
+  }
+
+  &__logo {
+    width: 120px;
+    height: 40px;
+  }
+
+  &__link {
+    height: 40px;
+    // font-family: 'Roboto', ;
+    // text-decoration: none;
+    // color: $c-white-text;
+    // text-transform: uppercase;
+  }
+}

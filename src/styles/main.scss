@@ -2,6 +2,31 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+@import "mobile-menu";
+@import "header";
+@import "nav";
+@import "content-container";
+
+html {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
 }
+
+body {
+  background-color: $main-bgcolor;
+}
+
+.main {
+  // background-color: $main-bgcolor;
+}
+
+// .raleway {
+  // font-family: "Raleway", sans-serif;
+  // font-size: 25px;
+// }
+
+// .playfair {
+  // font-family: "Raleway", sans-serif;
+  // font-family: "Playfair Display", serif;
+  // font-size: 25px;
+// }

@@ -1,0 +1,14 @@
+.content-container {
+  // display: flex;
+  // flex-direction: column;
+  // display: grid;
+  // grid-template-columns: $content-max-width;
+  // grid-template-rows: 80px 1fr;
+  margin: 0 auto;
+  // max-width: $content-max-width;
+  background-color: grey;
+
+  @media (min-width: 1280px) {
+    width: $content-max-width;
+  }
+}
