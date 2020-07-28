@@ -1,20 +1,33 @@
 .language {
   border-style: none;
+  outline: none;
   cursor: pointer;
 
   &__choose {
     width: 45px;
     height: 25px;
     cursor: pointer;
-    outline: none;
+    -moz-appearance: none;
+
     background-color: $header-footer-bgcolor;
     color: $c-white-text;
     border-style: none;
-
+    outline: none;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
+  }
+
+  // &__value:hover {
+  //   background-color: $c-black-small-text;
+  //   color: yellow;
+  // }
+
+  &__value:checked {
+    font-weight: 700;
+    background: $header-footer-bgcolor;
+    color: $c-black-big-text;
   }
 }

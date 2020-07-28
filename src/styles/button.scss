@@ -11,10 +11,10 @@
   line-height: 100%;
   color: $c-white-text;
   background-color: $red-bgcolor;
-  transition: background-color 1s ease-in, color 1s ease-in, box-shadow 0.5s;
+  transition: box-shadow 0.2s, background-color 0.3s ease-in, color 0.3s;
 
   &:hover {
-    box-shadow: 0 0 7px 3px rgba(80,79,94,1);
+    box-shadow: 0 0 7px 5px rgba(28,27,41,1);
     background-color: $main-bgcolor;
     color: $c-red-text;
   }
