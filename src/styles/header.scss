@@ -30,7 +30,7 @@
     color: $c-white-text;
 
     &-wrap {
-      padding-left: 55px;
+      padding-left: 100px;
     }
   }
 
@@ -41,9 +41,9 @@
     font-size: 16px;
     line-height: 150%;
     color: $c-white-text;
-    padding-left: 55px;
+    padding-left: 100px;
     padding-top: 40px;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
   }
 
   &__image-box {
@@ -102,6 +102,6 @@
   }
 
   &__button {
-    margin-left: 55px;
+    margin-left: 100px;
   }
 }
