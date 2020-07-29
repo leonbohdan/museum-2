@@ -3,6 +3,10 @@
   outline: none;
   cursor: pointer;
 
+  @media (max-width: 630px) {
+    display: none;
+  }
+
   &__choose {
     width: 45px;
     height: 25px;

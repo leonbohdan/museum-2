@@ -2,12 +2,14 @@
   $blockName: &;
 
   &__toggler {
+    position: relative;
     display: flex;
     align-items: center;
     width: 40px;
     height: 40px;
     opacity: 0;
     cursor: pointer;
+    // z-index: 2;
   }
 
   &__label,
@@ -23,6 +25,9 @@
   }
 
   &__label {
+    // width: 25px;
+    // height: 2px;
+    // padding: 20px;
     cursor: pointer;
     top: 4.85%;
   }
@@ -39,6 +44,8 @@
 
   &__toggler:checked + #{$blockName}__label {
     width: 0;
+    // opacity: 0;
+    // visibility: hidden;
     z-index: 2;
   }
 
@@ -52,9 +59,5 @@
 
   &__toggler:checked ~ .hidden-menu {
     transform: translateX(-1125px);
-  }
-
-  &__hidden-menu {
-    //
   }
 }
