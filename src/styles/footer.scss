@@ -1,3 +1,14 @@
 .footer {
-  
+  position: relative;
+  background-color: $header-footer-bgcolor;
+  height: 549px;
+
+  &__content-container {
+    background-color: rgb(143, 134, 134);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

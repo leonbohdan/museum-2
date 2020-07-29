@@ -3,6 +3,10 @@
   height: 800px;
   background-color: $header-footer-bgcolor;
 
+  // &__content-container {
+  //   background-color: grey;
+  // }
+
   @media (max-width: 1100px) {
     height: 762px;
   }
