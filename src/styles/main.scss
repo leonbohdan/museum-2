@@ -12,6 +12,15 @@
 @import "main-menu";
 @import "footer";
 
+@import "exhibitions";
+@import "events";
+@import "visit";
+@import "news";
+@import "subscribe";
+
+@import "exhibition";
+@import "event";
+
 * {
   box-sizing: border-box;
 }
@@ -31,9 +40,9 @@ body {
   // height: 100px;
 
   .content-container {
-    height: 100%;
+    // height: 100%;
     // background-color: $main-bgcolor;
-    background-color: rgb(180, 180, 180);
+    // background-color: rgb(180, 180, 180);
   }
 }
 

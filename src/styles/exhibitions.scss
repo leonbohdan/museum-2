@@ -1,0 +1,51 @@
+.exhibitions {
+  position: relative;
+
+  &__wrapper {
+    padding: 160px 155px 100px;
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: $c-black-big-text;
+
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__dates {
+    font-size: 48px;
+    line-height: 120%;
+    color: $c-red-text;
+
+    margin-left: 500px;
+    margin-bottom: 20px;
+  }
+
+  &__img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: -100px;
+  }
+
+  &__img:nth-of-type(2) {
+    position: absolute;
+    top: 700px;
+    right: -200px;
+  }
+
+  &__img:last-of-type {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+  }
+
+  &__archive {
+    //
+  }
+}

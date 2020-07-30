@@ -1,0 +1,83 @@
+.subscribe {
+  position: relative;
+  height: 460px;
+  background-color: $red-bgcolor;
+  color: $c-white-text;
+
+  &__wrapper {
+    margin-top: 200px;
+    padding: 160px 0 0 55px;
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: $c-white-text;
+    margin-bottom: 45px;
+  }
+
+  &__info {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__desc {
+    width: 570px;
+    color: $c-white-text;
+    margin-right: 130px;
+  }
+
+  &__form {
+    //
+  }
+
+  &__email,
+  &__email::placeholder {
+    font-family: Raleway, serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+    color: $c-white-text;
+  }
+
+  &__email {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $c-white-text;
+    background: $red-bgcolor;
+    padding-left: 10px;
+  }
+
+  &__label {
+
+    &-desktop {
+      transition: transform 0.5s;
+    }
+
+    &-desktop:hover {
+      cursor: pointer;
+      transform: translateX(10px);
+    }
+
+    &-tablet {
+      opacity: 0;
+      transition: transform 0.5s;
+    }
+
+    &-tablet:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

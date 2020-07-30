@@ -1,14 +1,126 @@
 .footer {
   position: relative;
   background-color: $header-footer-bgcolor;
-  height: 549px;
+  height: 550px;
+  color: $c-white-text;
+  list-style: none;
 
   &__content-container {
-    background-color: rgb(143, 134, 134);
+    position: relative;
+    height: 100%;
   }
 
   &__wrapper {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 160px 0 80px 55px;
+  }
+
+  &__contacts {
+    // min-width: 240px;
+    // text-decoration: none;
+
+    &-info {
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+    color: $c-white-text;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $c-white-text;
+  }
+
+  &__socials {
+    margin-top: 40px;
+
+    &__link {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  }
+
+  &__schedule {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__programs {
+    //
+    &-list {
+      //
+    }
+
+    &-item {
+      //
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $c-white-text;
+
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__about {
+    //
+    &-link {
+      text-decoration: none;
+      color: $c-white-text;
+
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__copy {
+    margin-right: 40px;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 160px;
+    right: 40px;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
   }
 }

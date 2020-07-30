@@ -1,0 +1,50 @@
+.exhibition {
+  margin-bottom: 150px;
+
+  &--shifted {
+    margin-left: 590px;
+  }
+
+  &--middle {
+    // 
+  }
+
+  &__decor {
+    display: none;
+  }
+
+  &__label {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $c-red-text;
+  }
+
+  &__name {
+    // font-family: Playfair Display;
+    // font-style: normal;
+    // font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+    color: $c-black-big-text;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $c-black-small-text;
+
+    width: 370px;
+    height: 70px;
+  }
+
+  &__button {
+    margin-top: 50px;
+  }
+}
