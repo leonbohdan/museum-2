@@ -16,6 +16,12 @@
   font-size: 16px;
   line-height: 100%;
   color: $c-black-big-text;
+
+  @media (max-width: 930px) {
+    padding: 11px;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 .events__calendar::after,
@@ -28,4 +34,12 @@
   width: 70px;
   height: 1px;
   background: $c-black-big-text;
+
+  @media (max-width: 930px) {
+    top: 100%;
+    margin-left: 0;
+    width: auto;
+    left: 0;
+    right: 0;
+  }
 }

@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="content-container header__content-container">
 
         <nav class="nav header__nav">
@@ -112,8 +112,8 @@
     </header>
 
     <main class="main">
-      <div class="content-container main__content-container">
-        <section class="exhibitions main__exhibitions" id="exhibitions">
+      <section class="exhibitions main__exhibitions" id="exhibitions">
+        <div class="container">
           <div class="exhibitions__wrapper">
             <h2 class="exhibitions__title main__title">Актуальтні виставки</h2>
             <h2 class="exhibitions__dates">11.07 - 22.09</h2>
@@ -161,9 +161,11 @@
             >
             <p class="exhibitions__archive">Архів виставок</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="events main__events" id="events">
+      <section class="events main__events" id="events">
+        <div class="container">
           <div class="events__wrapper">
             <h2 class="events__title main__title">Найближчі події</h2>
             <article class="event event__hudimov">
@@ -195,20 +197,30 @@
 
             <p class="events__calendar">Календар подій</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="visit main__visit" id="visit">
-          <div class="visit__info">
-            <h1 class="visit__title">Сплануйте візит до музею</h1>
-            <p class="visit__desc">Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не завадило вам насолоджуватись мистецтвом</p>
-            <button class="button visit__button">Почати</button>
+      <section class="visit main__visit" id="visit">
+        <div class="container">
+          <div class="visit__wrapper">
+            <div class="visit__info">
+              <h1 class="visit__title">Сплануйте візит до музею</h1>
+              <p class="visit__desc">Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не завадило вам насолоджуватись мистецтвом</p>
+              <button class="button visit__button">Почати</button>
+            </div>
+            <div class="visit__img-container">
+              <img
+                class="visit__image"
+                src="./images/girl_2.png"
+                alt="girl"
+              >
+            </div>
           </div>
-          <div class="visit__img-container">
-            <img src="./images/girl_2.png" alt="girl">
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="news main__news" id="news">
+      <section class="news main__news" id="news">
+        <div class="container">
           <h2 class="news__title main__title">Новини</h2>
           <div class="news__wrapper">
             <article class="news__card">
@@ -261,11 +273,14 @@
                 </p>
               </div>
             </article>
-          </div>
-          <p class="news__bottom">Усі новини</p>
-        </section>
 
-        <section class="subscribe main__subscribe" id="subscribe">
+            <p class="news__bottom">Усі новини</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe main__subscribe" id="subscribe">
+        <div class="container">
           <div class="subscribe__wrapper">
             <h2 class="subscribe__title main__title">Підпишіться на дайджест</h2>
             <div class="subscribe__info">
@@ -302,13 +317,12 @@
               </form>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="content-container footer__content-container">
-
         <div class="footer__wrapper">
           <div class="footer__contacts">
             <h3 class="footer__title">Контакти</h3>
@@ -330,7 +344,11 @@
                 rel="noopener"
                 class="footer__socials__link"
               >
-                <img src="./images/facebook.svg" alt="facebook-logo">
+                <img
+                  class="footer__icon"
+                  src="./images/facebook.svg"
+                  alt="facebook-logo"
+                >
                 <!-- <svg
                   class="footer__icon"
                   width="10"
@@ -349,7 +367,11 @@
                 rel="noopener"
                 class="footer__socials__link"
               >
-                <img src="./images/twitter.svg" alt="twitter-logo">
+                <img
+                  class="footer__icon"
+                  src="./images/twitter.svg"
+                  alt="twitter-logo"
+                >
                 <!-- <svg
                   class="footer__icon"
                   width="20"
@@ -368,7 +390,11 @@
                 rel="noopener"
                 class="footer__socials__link"
               >
-                <img src="./images/telegram.svg" alt="telegram-logo">
+                <img
+                  class="footer__icon"
+                  src="./images/telegram.svg"
+                  alt="telegram-logo"
+                >
                 <!-- <svg
                   class="footer__icon"
                   width="22"
@@ -389,7 +415,11 @@
                 rel="noopener"
                 class="footer__socials__link"
               >
-                <img src="./images/instagram.svg" alt="instagram-logo">
+                <img
+                  class="footer__icon"
+                  src="./images/instagram.svg"
+                  alt="instagram-logo"
+                >
                 <!-- <svg
                   class="footer__icon"
                   width="17" height="17"
@@ -409,13 +439,13 @@
 
           <div class="footer__schedule">
             <h3 class="footer__title">Розклад роботи</h3>
-            <pre class="footer__days">пн  вихідний</pre>
-            <pre class="footer__days">вт  вихідний</pre>
-            <pre class="footer__days">ср  10:00 - 17:00</pre>
-            <pre class="footer__days">чт  10:00 - 17:00</pre>
-            <pre class="footer__days">пт  12:00 - 19:00</pre>
-            <pre class="footer__days">сб  11:00 - 18:00</pre>
-            <pre class="footer__days">нд  10:00 - 17:00</pre>
+            <pre class="footer__days">пн   вихідний</pre>
+            <pre class="footer__days">вт   вихідний</pre>
+            <pre class="footer__days">ср   10:00 - 17:00</pre>
+            <pre class="footer__days">чт   10:00 - 17:00</pre>
+            <pre class="footer__days">пт   12:00 - 19:00</pre>
+            <pre class="footer__days">сб   11:00 - 18:00</pre>
+            <pre class="footer__days">нд   10:00 - 17:00</pre>
           </div>
 
           <div class="footer__programs">

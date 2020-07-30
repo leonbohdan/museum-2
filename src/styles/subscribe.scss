@@ -1,12 +1,19 @@
 .subscribe {
-  position: relative;
   height: 460px;
   background-color: $red-bgcolor;
   color: $c-white-text;
 
+  @media (max-width: 1150px) {
+    height: 100%;
+  }
+
   &__wrapper {
-    margin-top: 200px;
+    position: relative;
     padding: 160px 0 0 55px;
+
+    @media (max-width: 1150px) {
+      padding: 120px 0 120px 55px;
+    }
   }
 
   &__title {
@@ -17,6 +24,11 @@
     line-height: 120%;
     color: $c-white-text;
     margin-bottom: 45px;
+
+    @media (max-width: 1150px) {
+      width: 570px;
+      margin-bottom: 30px;
+    }
   }
 
   &__info {
@@ -26,12 +38,22 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
+    padding-bottom: 50px;
+
+    @media (max-width: 1150px) {
+      flex-direction: column;
+
+    }
   }
 
   &__desc {
     width: 570px;
     color: $c-white-text;
     margin-right: 130px;
+
+    @media (max-width: 1150px) {
+      margin: 30px 0 80px;
+    }
   }
 
   &__form {
@@ -57,27 +79,38 @@
     border-bottom: 1px solid $c-white-text;
     background: $red-bgcolor;
     padding-left: 10px;
+    margin-right: 5px;
   }
 
   &__label {
 
     &-desktop {
+      position: absolute;
+      bottom: 0;
       transition: transform 0.5s;
+
+      @media (max-width: 1150px) {
+        visibility: hidden;
+      }
     }
 
     &-desktop:hover {
       cursor: pointer;
-      transform: translateX(10px);
+      transform: translateX(10px) scale(1.3);
     }
 
     &-tablet {
-      opacity: 0;
+      visibility: hidden;
       transition: transform 0.5s;
+
+      @media (max-width: 1150px) {
+        visibility: visible;
+      }
     }
 
     &-tablet:hover {
       cursor: pointer;
-      transform: scale(1.1);
+      transform: scale(1.3);
     }
   }
 }

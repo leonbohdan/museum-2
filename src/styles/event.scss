@@ -1,10 +1,22 @@
 .event {
   margin-bottom: 280px;
 
+  @media (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
+
   &__hudimov {
     width: 470px;
     height: 270px;
     margin-left: 255px;
+
+    @media (max-width: 1200px) {
+      margin-left: 200px;
+    }
+
+    @media (max-width: 740px) {
+      margin-left: 150px;
+    }
   }
 
   &__hudimov::after {
@@ -12,12 +24,24 @@
     position: absolute;
     top: 220px;
     right: 55px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   &__australia {
     width: 470px;
     height: 270px;
     margin-left: 655px;
+
+    @media (max-width: 1200px) {
+      margin-left: 200px;
+    }
+
+    @media (max-width: 740px) {
+      margin-left: 150px;
+    }
   }
 
   &__australia::before {
@@ -25,6 +49,10 @@
     position: absolute;
     left: 55px;
     bottom: 250px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   &__date {
@@ -38,8 +66,16 @@
     color: $c-white-text;
     -webkit-text-stroke: 1px $c-red-text;
 
+    @media (max-width: 1200px) {
+      font-size: 36px;
+    }
+
     &--aus {
       left: 455px;
+
+      @media (max-width: 1200px) {
+        left: 55px;
+      }
     }
   }
 
@@ -49,6 +85,11 @@
     font-size: 36px;
     line-height: 100%;
     color: $c-red-text;
+
+    @media (max-width: 1200px) {
+      left: 30px;
+      font-size: 24px;
+    }
   }
 
   &__label {

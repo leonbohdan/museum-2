@@ -3,10 +3,6 @@
   height: 800px;
   background-color: $header-footer-bgcolor;
 
-  // &__content-container {
-  //   background-color: grey;
-  // }
-
   @media (max-width: 1100px) {
     height: 762px;
   }
@@ -21,11 +17,6 @@
   }
 
   &__bottomside {
-    // visibility: hidden;
-    // display: none;
-    // opacity: 0;
-    // transform: translateX(100%);
-
     position: relative;
     height: calc(100% - 80px);
     padding-left: 55px;
@@ -33,16 +24,5 @@
     @media (max-width: 630px) {
       padding-left: 20px;
     }
-  }
-
-  &__main-menu {
-    // visibility: hidden;
-    // display: none;
-  }
-
-  &__hidden-menu {
-    // position: absolute;
-    // visibility: hidden;
-    // display: none;
   }
 }

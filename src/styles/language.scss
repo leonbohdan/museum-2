@@ -24,11 +24,6 @@
     line-height: 150%;
   }
 
-  // &__value:hover {
-  //   background-color: $c-black-small-text;
-  //   color: yellow;
-  // }
-
   &__value:checked {
     font-weight: 700;
     background: $header-footer-bgcolor;
