@@ -3,6 +3,10 @@
   &__wrapper {
     position: relative;
     padding: 100px 55px;
+
+    @media (max-width: 700px) {
+      padding: 50px 20px;
+    }
   }
 
   &__title {
@@ -14,6 +18,13 @@
 
     @media (max-width: 1200px) {
       margin-bottom: 55px;
+    }
+
+    @media (max-width: 700px) {
+      text-align: start;
+      width: 270px;
+      font-size: 36px;
+      line-height: 125%;
     }
   }
 }
