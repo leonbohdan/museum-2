@@ -7,7 +7,7 @@
   background-color: $header-footer-bgcolor;
   transform: translateX(1280px - 155px);
   transition: transform 0.5s ease-in-out;
-  z-index: 1;
+  z-index: 2;
   $blockName: &;
 
   @media (max-width: 630px) {

@@ -9,7 +9,7 @@
     height: 40px;
     opacity: 0;
     cursor: pointer;
-    // z-index: 2;
+    z-index: 4;
   }
 
   &__label,
@@ -46,7 +46,7 @@
     width: 0;
     // opacity: 0;
     // visibility: hidden;
-    z-index: 2;
+    z-index: 3;
   }
 
   &__toggler:checked + #{$blockName}__label::before {
